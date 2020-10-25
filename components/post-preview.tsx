@@ -6,6 +6,8 @@ import Author from '../types/author'
 import { useFetch } from '@/lib/fetcher'
 import PostViews from './post-views'
 
+import { PostPreviewContainer } from './sc/post-preview'
+
 type Props = {
   title: string
   coverImage: string
@@ -29,7 +31,7 @@ const PostPreview = ({
   const views = data?.total;
 
   return (
-    <div>
+    <PostPreviewContainer>
       <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
@@ -44,7 +46,7 @@ const PostPreview = ({
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />
-    </div>
+    </PostPreviewContainer>
   )
 }
 

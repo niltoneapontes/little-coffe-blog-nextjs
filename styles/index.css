@@ -1,40 +1,33 @@
 @tailwind base;
 
 body {
-  background-color: #e8ffff;
-  color: #213e3b;
+  background-color: #252422;
+  color: #fffcf2;
 }
 
 h1 {
-  color: #14274e;
+  color: #eb5e28;
 }
 
 h3 {
-  color: #7579e7;
+  color: #ccc5b9;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #010101;
-    color: #f0ece2;
-  }
-
-  h1 {
-    color: #7579e7;
-  }
-
-  h3 {
-    color: #69779b;
-  }
-
-  img {
-    filter: brightness(0.9);
-  }
+img {
+  border-radius: 8px;
 }
+
+footer {
+  background-color: #403d39;
+  color: #ccc5b9
+}
+
 
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
+
+
 
 /* Write you own custom component styles here */
 

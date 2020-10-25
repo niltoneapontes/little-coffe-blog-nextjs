@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@types/mongodb": "^3.5.31",
+    "@types/styled-components": "^5.1.4",
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
     "gray-matter": "4.0.2",
@@ -16,8 +17,10 @@
     "next": "latest",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-icons": "^3.11.0",
     "remark": "11.0.2",
     "remark-html": "10.0.0",
+    "styled-components": "^5.2.0",
     "swr": "^0.3.6",
     "typescript": "^3.9.2"
   },
