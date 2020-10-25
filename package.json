@@ -8,14 +8,17 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@types/mongodb": "^3.5.31",
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
     "gray-matter": "4.0.2",
+    "mongodb": "^3.6.2",
     "next": "latest",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "remark": "11.0.2",
     "remark-html": "10.0.0",
+    "swr": "^0.3.6",
     "typescript": "^3.9.2"
   },
   "devDependencies": {
