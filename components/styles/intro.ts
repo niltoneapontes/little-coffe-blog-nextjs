@@ -16,6 +16,10 @@ export const IntroContainer = styled.aside`
   color: #FFB800;
   box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.25);
 
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+
   h1 {
     font-size: 32px;
     margin: 12px 32px 0 32px;
