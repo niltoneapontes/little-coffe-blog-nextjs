@@ -1,4 +1,10 @@
 @tailwind base;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
 
 body {
   background-color: #252422;
@@ -6,7 +12,7 @@ body {
 }
 
 h1 {
-  color: #eb5e28;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h3 {
@@ -19,9 +25,12 @@ img {
 
 footer {
   background-color: #403d39;
-  color: #ccc5b9
+  color: #ccc5b9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 /* Start purging... */
 @tailwind components;
