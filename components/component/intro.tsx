@@ -1,13 +1,14 @@
 import { IntroContainer, SocialMedia, AlignLogo } from '../styles/intro'
-import { FaMugHot, FaGithub, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { ButtonContainer, Button } from '../styles/button';
 import Link from 'next/link';
+import logo from '@/public/assets/logo.png';
 
 const Intro = () => {
   return (
     <IntroContainer>
       <AlignLogo>
-        <FaMugHot />
+        <img src={logo} alt="Logo" />
         <h1>
             Little Coffee
         </h1>

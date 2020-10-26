@@ -5,18 +5,21 @@ export const MainContainer = styled.main`
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   padding: 0;
   margin: 0;
 `;
 
 export const Author = styled.section`
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 52px;
+  margin: 52px 156px 0 0;
+
+  & + section {
+    margin-bottom: 52px;
+  }
 
   div {
     border-right: 8px solid #FFB800;

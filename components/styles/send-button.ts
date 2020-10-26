@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const SendButton = styled.button`
   cursor: pointer;
   border-radius: 16px;
-  width: 30%;
+  width: 50%;
   background-color: #FFB800;
   color: #252422;
   font-family: 'Montserrat', sans-serif;

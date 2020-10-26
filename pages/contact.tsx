@@ -4,7 +4,8 @@ import Intro from '@/components/component/intro'
 import { Input } from '@/components/styles/input';
 import { SendButton } from '@/components/styles/send-button';
 import { TextArea } from '@/components/styles/text-area';
-import { ContactContainer, Background } from '@/components/styles/contact-container';
+import { ContactContainer } from '@/components/styles/contact-container';
+import contact from '../public/assets/contact.svg';
 
 const Contact = () => {
 
@@ -19,6 +20,7 @@ const Contact = () => {
             <TextArea placeholder="Mensagem"/>
             <SendButton>Enviar</SendButton>
           </ContactContainer>
+          <img src={contact} alt="Chat" width="320" style={{marginRight: 104}} />
         </Container>
       </Layout>
   )
