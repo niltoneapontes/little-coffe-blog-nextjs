@@ -20,12 +20,14 @@ export const ImageContainer = styled.div`
   position: relative;
   margin-bottom: 24px;
 
-  &:hover {
-    filter: brightness(80%);
-  }
-
   img {
     width: 100%;
+    transition: all .3s ease-in-out;
+
+  }
+
+  &:hover img {
+    transform: scale(1.1);
   }
 `;
 
