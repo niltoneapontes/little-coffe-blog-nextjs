@@ -17,7 +17,7 @@ const Authors = () => {
             <p>Pernambucano</p>
             <p>Tenho um gato e amo música</p>
           </div>
-          <img src="/assets/perfil.jpg" alt=""/>
+          <img src="/assets/perfil.jpg" alt="Author"/>
         </Author>
 
         <Author>
@@ -27,7 +27,7 @@ const Authors = () => {
             <p>Cearense</p>
             <p>Tenho um gato e amo livros e séries</p>
           </div>
-          <img src="/assets/perfilTatahAuto.jpg" alt=""/>
+          <img src="/assets/perfilTatahAuto.jpg" alt="Author"/>
         </Author>
 
       </MainContainer>

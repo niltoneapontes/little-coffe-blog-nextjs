@@ -38,9 +38,18 @@ export const Author = styled.section`
     }
   }
 
+  img {
+    margin-left: 24px;
+    width: 240px;
+  }
+
   @media only screen and (max-width: 768px) {
     & {
       margin: 52px 52px 0 0;
+
+      img {
+        width: 120px;
+      }
     }
 
     div {
@@ -59,14 +68,6 @@ export const Author = styled.section`
         font-size: 14px;
       }
     }
-
-    img {
-      width: 140px;
-    }
   }
 
-  img {
-    margin-left: 24px;
-    width: 240px;
-  }
 `;

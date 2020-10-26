@@ -19,9 +19,10 @@ export const ToggleContainer = styled.div`
       width: 30px;
       height: 5px;
       border-radius: 5px;
-      background-color: #ff0;
+      background-color: #FFB800;
       transition: all .6s;
       -webkit-transition: 0.6s;
+      visibility: hidden;
     }
 
     label {
@@ -29,7 +30,7 @@ export const ToggleContainer = styled.div`
       top: 5%;
       left: 5%;
       z-index: 2;
-      visibility: visible;
+      visibility: hidden;
     }
 
     label::before {
@@ -62,6 +63,29 @@ export const ToggleContainer = styled.div`
 
     #toggle:checked ~ aside{
       visibility: visible;
+    }
+
+    @media only screen and (max-width: 768px) {
+      label,
+      label::before,
+      label::after {
+        position: absolute;
+        width: 30px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #FFB800;
+        transition: all .6s;
+        -webkit-transition: 0.6s;
+        visibility: visible;
+      }
+
+      label {
+        cursor: pointer;
+        top: 5%;
+        left: 5%;
+        z-index: 2;
+        visibility: visible;
+      }
     }
 
 `;
