@@ -5,6 +5,7 @@ export const PostPreviewContainer = styled.section`
   border-radius: 8px;
   border: 1px solid #403d39;
   padding: 2rem;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.25);
 
   &:hover {
     border: 1px solid #FFB800;

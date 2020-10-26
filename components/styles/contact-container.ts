@@ -1,11 +1,19 @@
 import styled from 'styled-components';
 
-export const ContactContainer = styled.main`
-  flex: 1;
+export const ContactContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+
+    #title {
+      margin-top: 52px;
+    }
+
+    #svg-image {
+      width: 240px;
+      margin: 52px auto;
+    }
+
+  }
 `;
