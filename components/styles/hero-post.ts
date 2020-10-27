@@ -22,6 +22,7 @@ export const ImageContainer = styled.div`
 
   img {
     width: 100%;
+    height: 320px;
     transition: all .3s ease-in-out;
 
   }
@@ -34,7 +35,7 @@ export const ImageContainer = styled.div`
 export const ImageMask = styled.div`
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   width: 100%;
-  height: 100%;
+  height: 320px;
   position: absolute;
 `;
 

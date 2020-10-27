@@ -1,6 +1,6 @@
 ---
-title: "Preview Mode for Static Generation"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
+title: "Ecoleta"
+excerpt: "Projeto desenvolvido durante a Semana Omnistack 11.0 da Rocketseat."
 coverImage: "/assets/blog/preview/cover.jpg"
 date: "2020-03-16T05:35:07.322Z"
 author:
@@ -10,10 +10,33 @@ ogImage:
   url: "/assets/blog/preview/cover.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+Projeto desenvolvido durante a Semana Omnistack 11.0 da Rocketseat.
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+## Tecnologias utilizadas
 
-## Lorem Ipsum
+- ReactJS
+- NodeJS
+- Express
+- Axios
+- Cors
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+## Screenshots da aplicação
+
+[![](https://i.imgur.com/Jx7CTs3.png)](https://i.imgur.com/Jx7CTs3.png)
+
+[![](https://i.imgur.com/4pUpdaw.png)](https://i.imgur.com/4pUpdaw.png)
+
+[![](https://i.imgur.com/d4GtS6C.png)](https://i.imgur.com/d4GtS6C.png)
+
+[![](https://i.imgur.com/xiSW5gc.png)](https://i.imgur.com/xiSW5gc.png)
+
+[![](https://i.imgur.com/fk7HNjH.png)](https://i.imgur.com/fk7HNjH.png)
+
+[![](https://i.imgur.com/npKuhxJ.png)](https://i.imgur.com/npKuhxJ.png)
+
+## Instalação
+
+1. Para utilizar esta aplicação em sua máquina faça o download (ou clone o repositório e em seguida realize um "pull");
+2. Acesse o seu terminal e navegue até a pasta da aplicação;
+3. Assim, acesse a pasta "backend" e digite o comando `npm start` para iniciar o servidor em modo de desenvolvimento;
+4. Em seguida, acesse a pasta "frontend" e digite o comando `npm start` para iniciar a aplicação na porta "localhost" padrão (3000).

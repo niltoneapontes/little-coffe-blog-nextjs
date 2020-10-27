@@ -24,6 +24,7 @@ margin-bottom: 24px;
 
   img {
     width: 100%;
+    height: 320px;
   }
 
   @media only screen and (max-width: 768px) {

@@ -106,6 +106,16 @@ export const IntroContainer = styled.aside`
   color: #FFB800;
   box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease-in-out;
+  animation: enter 0.5s forwards;
+
+  @keyframes enter {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 
 
   @media only screen and (max-width: 768px) {

@@ -9,11 +9,13 @@ export const MainContainer = styled.main`
   justify-content: center;
   padding: 0;
   margin: 0;
+  animation: enterAuthor 0.5s forwards;
 
   @media only screen and (max-width: 768px) {
     & {
       height: 100vh;
     }
+  }
 
 `;
 
@@ -76,4 +78,12 @@ export const Author = styled.section`
     }
   }
 
+  @keyframes enterAuthor {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 `;
