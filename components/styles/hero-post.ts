@@ -44,17 +44,27 @@ export const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 2rem;
 
   h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 800;
   }
+
+
+  @media only screen and (max-width: 768px) {
+   h3 {
+     font-size: 1.5rem;
+   } 
+  }
 `;
 
 export const InfoContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  width: 100%;
+
   p {
     max-width: 50%;
   }

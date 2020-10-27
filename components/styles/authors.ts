@@ -9,6 +9,12 @@ export const MainContainer = styled.main`
   justify-content: center;
   padding: 0;
   margin: 0;
+
+  @media only screen and (max-width: 768px) {
+    & {
+      height: 100vh;
+    }
+
 `;
 
 export const Author = styled.section`

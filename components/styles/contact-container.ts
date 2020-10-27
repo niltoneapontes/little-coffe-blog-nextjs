@@ -11,8 +11,7 @@ export const ContactContainer = styled.div`
     }
 
     #svg-image {
-      width: 120px;
-      margin: 52px auto;
+      visibility: hidden;
     }
 
   }

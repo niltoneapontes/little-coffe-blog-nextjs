@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 export const PostHeaderContainer = styled.header`
 margin: 32px;
+
+@media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -19,6 +25,11 @@ margin-bottom: 24px;
   img {
     width: 100%;
   }
+
+  @media only screen and (max-width: 768px) {
+    margin: 2rem 0;
+  }
+
 `;
 
 export const ImageMask = styled.div`
