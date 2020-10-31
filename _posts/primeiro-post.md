@@ -1,13 +1,13 @@
 ---
 title: "Criação do blog! 🎉"
 excerpt: "Finalmente o nosso blog está disponível e em breve devemos publicar tudo o que acharmos interessante e/ou útil para vocês. 😁"
-coverImage: "https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
+coverImage: "https://imgur.com/sUHxJr7.png"
 date: "2020-10-28T02:37:24.042Z"
 author:
   name: Nilton Pontes
   picture: "/assets/square.jpg"
 ogImage:
-  url: "https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
+  url: "https://imgur.com/sUHxJr7.png"
 ---
 
 Finalmente o nosso blog está disponível e em breve devemos publicar tudo o que acharmos interessante e/ou útil para vocês. 😁 Não definimos um tema específico para abordar por aqui, então fiquem ligados que provavelmente teremos DE TUDO um pouco.
