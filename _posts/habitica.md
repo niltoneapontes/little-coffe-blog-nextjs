@@ -63,13 +63,13 @@ Como o nome já diz, foram feitos para desafiar você a criar e/ou manter determ
 
 Eu conheci o [Habitica](https://habitica.com/ "Habitica") essa semana e ainda não tive tempo de explorá-lo por completo, mas achei as funcionalidades que já utilizei MUITO bacanas, úteis e bem apresentadas. Se você quer mudar seus hábitos e se divertir com um game ao mesmo tempo, o Habitica é ideal para você.
 
-# Plataformas
+## Plataformas
 
 Além do site, o [Habitica](https://habitica.com/ "Habitica") também possui apps para iOS e Android.
 
 [![Aplicativos](https://imgur.com/LVxoaIE.png "Aplicativos")](https://imgur.com/LVxoaIE.png "Aplicativos")
 
-# Conclusões finais
+## Conclusões finais
 
 Bom pessoal... É isso, espero que vocês tenham gostado do conteúdo e, se você ficou interessado no Habitica, acessa o site deles em: https://habitica.com/
 
