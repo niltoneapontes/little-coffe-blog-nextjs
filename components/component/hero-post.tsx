@@ -49,7 +49,12 @@ const HeroPost = ({
       </ImageContainer>
 
         <InfoContainer>
-          <p>{excerpt}</p>
+          <p className="text-lg leading-relaxed mb-4">{excerpt}             
+            <Link as={`/posts/${slug}`} href="/posts/[slug]">
+              <a className="hover:underline" href="/posts/[slug]">...ler mais</a> 
+            </Link>
+          </p>
+
           <Avatar name={author.name} picture={author.picture} />
         </InfoContainer>
     </Container>

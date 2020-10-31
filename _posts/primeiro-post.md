@@ -1,6 +1,6 @@
 ---
 title: "Criação do blog! 🎉"
-excerpt: "Finalmente o nosso blog está disponível e em breve devemos publicar tudo o que acharmos interessante e/ou útil para vocês. 😁"
+excerpt: "Finalmente o nosso blog está disponível e em breve devemos publicar tudo o que acharmos interessante e/ou útil para vocês 😁"
 coverImage: "https://imgur.com/sUHxJr7.png"
 date: "2020-10-28T02:37:24.042Z"
 author:

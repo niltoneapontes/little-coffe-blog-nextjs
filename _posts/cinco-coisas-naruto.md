@@ -2,7 +2,7 @@
 title: "Cinco coisas que aprendi com Naruto 🗒️"
 excerpt: "Não fazia ideia do que escrever no primeiro post aqui no blog, mas ultimamente venho voltando a assistir um dos animes mais famosos no mundo inteiro: o bom e velho Naruto!
 
-Pois é. Uma coisa que a gente acaba não observando é que o anime traz várias reflexões que ultrapassam jutsus, kunais, chakra e tudo mais. O foco desse post é trazer cinco entre essas várias reflexões e falar sobre como podemos aplicá-las em nossas vidas, seja você um dev ou não 😁😅."
+Pois é. Uma coisa que a gente acaba não observando é que o anime traz várias reflexões que ultrapassam jutsus, kunais, chakra e tudo mais. O foco desse post é trazer cinco entre essas várias reflexões e falar sobre como podemos aplicá-las em nossas vidas, seja você um dev ou não 😁😅"
 coverImage: "https://imgur.com/7nBYzVv.png"
 date: "2020-10-29T03:34:38.359Z"
 author:

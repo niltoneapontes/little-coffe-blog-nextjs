@@ -44,7 +44,11 @@ const PostPreview = ({
         <DateFormatter dateString={date} />
         <PostViews>{` - ${views >= 0 ? views : "..."} views`}</PostViews>
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+        <p className="text-lg leading-relaxed mb-4">{excerpt}
+            <Link as={`/posts/${slug}`} href="/posts/[slug]">
+              <a className="hover:underline" href="/posts/[slug]">...ler mais</a> 
+            </Link>
+        </p>
       <Avatar name={author.name} picture={author.picture} />
     </PostPreviewContainer>
   )
