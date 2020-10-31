@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-        <p>Made with love  by Nilton Pontes (c)</p>
+        <p>© 2020 Little Coffee Blog - All rights reserved</p>
     </footer>
   )
 }

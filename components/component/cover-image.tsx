@@ -12,7 +12,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
     <img
       src={src}
       alt={`Cover Image for ${title}`}
-      style={{borderRadius: 8}}
+      style={{borderRadius: 8, width: 1200}}
     />
   )
   return (

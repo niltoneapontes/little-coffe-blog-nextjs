@@ -20,11 +20,9 @@ export const ImageContainer = styled.div`
   position: relative;
   margin-bottom: 24px;
 
-  img {
-    width: 100%;
-    height: 320px;
+  img {  
+    height: 100%;
     transition: all .3s ease-in-out;
-
   }
 
   &:hover img {
