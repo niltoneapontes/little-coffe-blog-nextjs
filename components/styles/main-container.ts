@@ -5,6 +5,6 @@ export const MainContainer = styled.main`
 
   @media only screen and (max-width: 768px) {
     flex: 1;
-    padding: 2.5rem .25rem 0;
+    padding: 2.5rem .5rem 0;
   }
 `;
