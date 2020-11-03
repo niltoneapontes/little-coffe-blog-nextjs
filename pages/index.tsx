@@ -8,6 +8,8 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../types/post'
 
+import SimpleForm from '../components/component/chatbot'
+
 type Props = {
   allPosts: Post[]
 }
@@ -38,6 +40,7 @@ const Index = ({ allPosts }: Props) => {
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </MainContainer>
         </Container>
+        <SimpleForm />
       </Layout>
     </>
   )

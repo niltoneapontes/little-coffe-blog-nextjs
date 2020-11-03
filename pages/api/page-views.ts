@@ -1,5 +1,4 @@
 import { connectToDatabase } from '@/config/mongodb';
-import { connect } from 'http2';
 
 import { NextApiRequest, NextApiResponse } from 'next';
 

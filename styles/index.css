@@ -23,6 +23,15 @@ img {
   border-radius: 8px;
 }
 
+input {
+  color: #252422
+}
+
+td {
+  font-family: 'Roboto', sans-serif;
+  margin-right: 12px;
+}
+
 footer {
   background-color: #403d39;
   color: #ccc5b9;
