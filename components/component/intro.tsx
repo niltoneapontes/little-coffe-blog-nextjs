@@ -2,7 +2,7 @@ import { IntroContainer, SocialMedia, AlignLogo, ToggleContainer } from '../styl
 import { FaGithub, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { ButtonContainer, Button } from '../styles/button';
 import Link from 'next/link';
-import logo from '@/public/assets/logo.png';
+import Image from 'next/image';
 
 const Intro = () => {
   return (
@@ -11,7 +11,7 @@ const Intro = () => {
         <label htmlFor="toggle"></label>
         <IntroContainer>
           <AlignLogo>
-            <img src={logo} alt="Logo" />
+            <Image src='/../public/assets/logo.png' width={52} height={72} alt="Logo" />
             <h1>
                 Little Coffee
             </h1>

@@ -2,6 +2,7 @@ import Layout from '@/components/component/layout'
 import Container from '@/components/component/container'
 import Intro from '@/components/component/intro'
 import { MainContainer, Author } from '@/components/styles/authors';
+import SimpleForm from '@/components/component/chatbot';
 
 const Authors = () => {
 
@@ -32,6 +33,7 @@ const Authors = () => {
 
       </MainContainer>
     </Container>
+    <SimpleForm />
     </Layout>
   )
 
