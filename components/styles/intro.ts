@@ -79,6 +79,10 @@ export const ToggleContainer = styled.div`
         visibility: visible;
       }
 
+      #toggle:checked ~ aside{
+        left: 0;
+      }
+
       label {
         cursor: pointer;
         top: 5%;
@@ -119,11 +123,11 @@ export const IntroContainer = styled.aside`
 
 
   @media only screen and (max-width: 768px) {
-
     & {
       position: absolute;
       z-index: 1;
-      visibility: hidden;
+      visibility: visible;
+      left: -260px;
     }
   }
   

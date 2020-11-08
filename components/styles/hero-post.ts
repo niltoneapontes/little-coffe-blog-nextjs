@@ -10,23 +10,28 @@ export const Container = styled.section`
 
 export const ImageContainer = styled.div`
   background: #252422;
-  align-items: center;
   justify-content: center;
   border-radius: 8px;
   display: flex;
-  height: 320px;
+  height: 240px;
   width: 100%;
   overflow: hidden;
   position: relative;
   margin-bottom: 24px;
 
   img {  
-    height: 100%;
     transition: all .3s ease-in-out;
   }
 
-  &:hover img {
-    transform: scale(1.1);
+  @media only screen and (min-width: 1025px) {
+    height: 320px;
+    img {
+      height: 100%;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
   }
 `;
 
@@ -35,6 +40,10 @@ export const ImageMask = styled.div`
   width: 100%;
   height: 320px;
   position: absolute;
+
+  @media only screen and (max-width: 768px) {
+    visibility: hidden;
+  }
 `;
 
 export const TitleContainer = styled.div`

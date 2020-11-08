@@ -11,10 +11,10 @@ const Intro = () => {
       <label htmlFor="toggle"></label>
       <IntroContainer>
         <AlignLogo>
-          <Image src='https://imgur.com/rgZI9dv.png' width={52} height={72} alt="Logo" />
+          <Image src='https://imgur.com/rgZI9dv.png' className="logo-img" width={52} height={72} alt="Logo" />
           <h1>
             Little Coffee
-            </h1>
+          </h1>
         </AlignLogo>
 
         <ButtonContainer>
