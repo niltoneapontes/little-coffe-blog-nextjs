@@ -38,7 +38,7 @@ const HeroPost = ({
         <TitleContainer>
           <h3>
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <a className="hover:underline">{title}</a>
+              <a className="hover:underline" >{title}</a>
             </Link>
           </h3>
           <div>

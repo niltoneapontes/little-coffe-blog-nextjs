@@ -52,7 +52,7 @@ export const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0;
 
   h3 {
     font-family: 'Montserrat', sans-serif;
@@ -63,7 +63,8 @@ export const TitleContainer = styled.div`
 
   @media only screen and (max-width: 768px) {
    h3 {
-     font-size: 1.5rem;
+     font-size: 2rem;
+     text-align: center;
    } 
   }
 `;
@@ -75,5 +76,13 @@ export const InfoContainer = styled.div`
 
   p {
     max-width: 50%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+
+    p {
+      max-width: 100%;
+    }
   }
 `;
