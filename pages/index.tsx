@@ -78,7 +78,7 @@ export default Index
 
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const getPosts = await client().query([
     Prismic.Predicates.at('document.type', 'post')
   ])
@@ -91,23 +91,3 @@ export async function getStaticProps() {
     },
   }
 }
-
-export async function getStaticPaths() {
-  const posts = await client().query([
-    Prismic.Predicates.at('document.type', 'post')
-  ])
-
-  const paths = posts.results.map((post) => {
-    return {
-      params: {
-        slug: post.uid,
-      },
-    }
-  });
-
-  return {
-    paths,
-    fallback: false,
-  }
-}
-
