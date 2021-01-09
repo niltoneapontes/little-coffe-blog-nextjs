@@ -24,7 +24,6 @@ export const ImageContainer = styled.div`
   }
 
   @media only screen and (min-width: 1025px) {
-
     &:hover img {
       transform: scale(1.1);
     }
@@ -38,7 +37,7 @@ export const ImageMask = styled.div`
   position: absolute;
 
   @media only screen and (max-width: 768px) {
-    visibility: hidden;
+    /* visibility: hidden; */
   }
 `;
 
@@ -49,19 +48,70 @@ export const TitleContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0;
+  width: 100%;
 
   h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 800;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+
+     a {       
+      width: 100%;
+      text-align: center;
+     }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-end;
+
+   h3 {
+     font-size: 1.5rem;
+     text-align: center;
+     line-height: 2rem;
+     word-wrap: break-word;
+
+     a {       
+      width: 100%;
+      text-align: center;
+     }
+   }
+   div {
+     display: none;
+   } 
+   time, small {
+     font-size: 0.5rem;
+     line-height: 0.5rem;
+   }
   }
 
-
   @media only screen and (max-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-end;
+
    h3 {
-     font-size: 2rem;
+     font-size: 1rem;
      text-align: center;
+     line-height: 1.25rem;
+     word-wrap: break-word;
+
+     a {       
+      width: 100%;
+      text-align: center;
+     }
+   }
+   div {
+     display: none;
    } 
+   time, small {
+     font-size: 0.5rem;
+     line-height: 0.5rem;
+   }
   }
 `;
 
