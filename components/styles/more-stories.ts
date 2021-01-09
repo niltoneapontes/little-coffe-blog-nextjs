@@ -6,7 +6,7 @@ export const MoreStoriesContainer = styled.section`
   align-items: center;
   justify-content: space-around;
   padding: 0;
-  /* word-wrap: break-word; */
+  word-wrap: break-word;
   width: 85%;
 
   @media(min-width: 520px) {
