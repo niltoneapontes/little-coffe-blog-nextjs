@@ -6,7 +6,7 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   margin: 32px 32px 52px 32px;
-  word-wrap: break-word;
+  word-break: break-word;
 `;
 
 export const ImageContainer = styled.div`
@@ -56,7 +56,7 @@ export const TitleContainer = styled.div`
     font-weight: 800;
     width: 100%;
     text-align: center;
-    word-wrap: break-word;
+    word-break: break-word;
 
      a {       
       width: 100%;
@@ -73,7 +73,7 @@ export const TitleContainer = styled.div`
      font-size: 1.5rem;
      text-align: center;
      line-height: 2rem;
-     word-wrap: break-word;
+     word-break: break-word;
 
      a {       
       width: 100%;
@@ -98,7 +98,7 @@ export const TitleContainer = styled.div`
      font-size: 1rem;
      text-align: center;
      line-height: 1.25rem;
-     word-wrap: break-word;
+     word-break: break-word;
 
      a {       
       width: 100%;
