@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
@@ -5,52 +6,55 @@ import Link from 'next/link'
 import Author from '../../types/author'
 import { useFetch } from '@/lib/fetcher'
 import PostViews from './post-views'
+import { RichText } from 'prismic-dom'
 
 import { Container, ImageContainer, ImageMask, InfoContainer, TitleContainer } from '../styles/hero-post';
 
 type Props = {
-  title: string
-  coverImage: string
-  date: string
-  excerpt: string
-  author: Author
-  slug: string
+  heroPost: { 
+    uid: string;
+    data: {
+      title: [{text: string}];
+      excerpt: [{text: string}];
+      coverimage: {url: string};
+      date: string;
+      body: [{
+        text: string;
+      }];
+  }},
+  author: {
+    name: string;
+    picture: string;
+  }
 }
 
-const HeroPost = ({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}: Props) => {
-
-  const { data } = useFetch(`/api/page-views-preview?id=${slug}`, true)
+const HeroPost = ({ heroPost, author }: Props) => {
+  const router = useRouter();
+  const { data } = useFetch(`/api/page-views-preview?id=${heroPost.uid}`, true)
 
   const views = data?.total;
 
   return (
     <Container>
       <ImageContainer>
-        <CoverImage title={title} src={coverImage} slug={slug} />
+        <CoverImage title={RichText.asText(heroPost.data.title)} src={heroPost.data.coverimage.url} slug={heroPost.uid} />
         <ImageMask></ImageMask>
         <TitleContainer>
           <h3>
-            <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <a className="hover:underline" >{title}</a>
+            <Link as={`/posts/${heroPost.uid}`} href="/posts/[slug]">
+              <a className="hover:underline" >{RichText.asText(heroPost.data.title)}</a>
             </Link>
           </h3>
           <div>
-            <DateFormatter dateString={date} />
+            <DateFormatter dateString={heroPost.data.date} />
             <PostViews>{` - ${views >= 0 ? views : "..."} views`}</PostViews>
           </div>
         </TitleContainer>
       </ImageContainer>
 
         <InfoContainer>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}             
-            <Link as={`/posts/${slug}`} href="/posts/[slug]">
+          <p className="text-lg leading-relaxed mb-4">{RichText.asText(heroPost.data.excerpt)}             
+            <Link as={`/posts/${heroPost.uid}`} href="/posts/[slug]">
               <a className="hover:underline" style={{ fontStyle: "italic", color: "#FFB800" }} href="/posts/[slug]">...ler mais</a> 
             </Link>
           </p>

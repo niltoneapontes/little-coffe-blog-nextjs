@@ -40,9 +40,9 @@ type Props = {
 
 const Post = ({ selectedPost, author, morePosts, preview }: Props) => {
   const router = useRouter()
-  // if (!router.isFallback && !post?.slug) {
-  //   return <ErrorPage statusCode={404} />
-  // }
+  if (!router.isFallback && !selectedPost?.uid) {
+    return <ErrorPage statusCode={404} />
+  }
 
   const { data } = useFetch(`/api/page-views?id=${selectedPost.uid}`)
 
@@ -56,13 +56,13 @@ const Post = ({ selectedPost, author, morePosts, preview }: Props) => {
           <>
             <MainContainer className="mb-32">
               <PostHeader
-                title={selectedPost.data.title[0].text}
+                title={RichText.asText(selectedPost.data.title)}
                 coverImage={selectedPost.data.coverimage.url}
                 date={selectedPost.data.date}
                 author={author}
                 views={data?.total}
               />
-              <PostBody content={selectedPost.data.body[0].text} />
+              <PostBody content={RichText.asHtml(selectedPost.data.body)} />
             </MainContainer>
           </>
         )}
@@ -80,20 +80,7 @@ type Params = {
 }
 
 export async function getStaticProps({ params }: Params) {
-  // const post = getPostBySlug(params.slug, [
-  //   'title',
-  //   'date',
-  //   'slug',
-  //   'author',
-  //   'content',
-  //   'ogImage',
-  //   'coverImage',
-  // ])
-
   const selectedPost = await client().getByUID('post', params.slug, {})
-  // const content = await markdownToHtml(post.content || '')
-
-  console.log(selectedPost.data)
 
   const author = {
       name: selectedPost.data.authorname[0].text, 
@@ -109,7 +96,6 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  // const posts = getAllPosts(['slug'])
   const posts = await client().query([
     Prismic.Predicates.at('document.type', 'post')
   ])

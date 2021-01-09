@@ -6,6 +6,7 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   margin: 32px 32px 52px 32px;
+  word-wrap: break-word;
 `;
 
 export const ImageContainer = styled.div`
@@ -13,7 +14,6 @@ export const ImageContainer = styled.div`
   justify-content: center;
   border-radius: 8px;
   display: flex;
-  height: 240px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -24,10 +24,6 @@ export const ImageContainer = styled.div`
   }
 
   @media only screen and (min-width: 1025px) {
-    height: 320px;
-    img {
-      height: 100%;
-    }
 
     &:hover img {
       transform: scale(1.1);
@@ -38,7 +34,7 @@ export const ImageContainer = styled.div`
 export const ImageMask = styled.div`
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   width: 100%;
-  height: 320px;
+  height: 100%;
   position: absolute;
 
   @media only screen and (max-width: 768px) {

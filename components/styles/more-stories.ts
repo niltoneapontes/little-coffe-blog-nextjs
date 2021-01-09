@@ -6,4 +6,14 @@ export const MoreStoriesContainer = styled.section`
   align-items: center;
   justify-content: space-around;
   padding: 0;
+  word-wrap: break-word;
+  width: 85%;
+
+  @media(min-width: 520px) {
+    width: calc(100% - 64px);
+  }
+
+  img {
+    width: 100%;
+  }
 `;
