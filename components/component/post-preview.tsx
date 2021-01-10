@@ -44,7 +44,7 @@ const PostPreview = ({
         <DateFormatter dateString={date} />
         <PostViews>{` - ${views >= 0 ? views : "..."} views`}</PostViews>
       </div>
-        <p className="text-lg leading-relaxed mb-4">{excerpt}
+        <p className="text-lg mb-4">{excerpt}
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
               <a className="hover:underline" style={{ fontStyle: "italic", color: "#FFB800" }} href="/posts/[slug]">...ler mais</a> 
             </Link>
