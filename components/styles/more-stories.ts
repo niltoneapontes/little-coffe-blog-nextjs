@@ -6,10 +6,14 @@ export const MoreStoriesContainer = styled.section`
   align-items: center;
   justify-content: space-around;
   padding: 0;
-  word-break: break-word;
-  width: 85%;
+  width: 100%;
 
-  @media(min-width: 520px) {
+
+  @media only screen and (max-width: 768px) {
+    margin: 32px 0 52px;
+  }
+
+  @media(min-width: 768px) {
     width: calc(100% - 64px);
   }
 

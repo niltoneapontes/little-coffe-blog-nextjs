@@ -39,8 +39,9 @@ const HeroPost = ({ heroPost, author }: Props) => {
       <ImageContainer>
         <CoverImage title={RichText.asText(heroPost.data.title)} src={heroPost.data.coverimage.url} slug={heroPost.uid} />
         <ImageMask></ImageMask>
-        <TitleContainer>
-          <h3>
+      </ImageContainer>
+      <TitleContainer>
+          <h3 className="text-3xl mb-3 leading-snug">
             <Link as={`/posts/${heroPost.uid}`} href="/posts/[slug]">
               <a className="hover:underline" >{RichText.asText(heroPost.data.title)}</a>
             </Link>
@@ -50,7 +51,6 @@ const HeroPost = ({ heroPost, author }: Props) => {
             <PostViews>{` - ${views >= 0 ? views : "..."} views`}</PostViews>
           </div>
         </TitleContainer>
-      </ImageContainer>
 
         <InfoContainer>
           <p className="text-lg leading-relaxed mb-4">{RichText.asText(heroPost.data.excerpt)}             

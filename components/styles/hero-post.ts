@@ -6,7 +6,10 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   margin: 32px 32px 52px 32px;
-  word-break: break-word;
+
+  @media only screen and (max-width: 768px) {
+    margin: 32px 0 52px;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -35,20 +38,16 @@ export const ImageMask = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
-
-  @media only screen and (max-width: 768px) {
-    /* visibility: hidden; */
-  }
 `;
 
 export const TitleContainer = styled.div`
-  position: absolute;
-  bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
   width: 100%;
+  text-align: center;
+  height: auto;
 
   h3 {
     font-family: 'Montserrat', sans-serif;
@@ -65,39 +64,12 @@ export const TitleContainer = styled.div`
   }
   
   @media only screen and (max-width: 1000px) {
-    position: absolute;
-    bottom: 0;
     justify-content: flex-end;
 
    h3 {
      font-size: 1.5rem;
      text-align: center;
      line-height: 2rem;
-     word-break: break-word;
-
-     a {       
-      width: 100%;
-      text-align: center;
-     }
-   }
-   div {
-     display: none;
-   } 
-   time, small {
-     font-size: 0.5rem;
-     line-height: 0.5rem;
-   }
-  }
-
-  @media only screen and (max-width: 768px) {
-    position: absolute;
-    bottom: 0;
-    justify-content: flex-end;
-
-   h3 {
-     font-size: 1rem;
-     text-align: center;
-     line-height: 1.25rem;
      word-break: break-word;
 
      a {       
