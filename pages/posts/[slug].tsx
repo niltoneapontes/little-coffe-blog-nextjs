@@ -79,7 +79,7 @@ type Params = {
   }
 }
 
-export async function getStaticProps({ params }: Params) {
+export async function getServerSideProps({ params }: Params) {
   const selectedPost = await client().getByUID('post', params.slug, {})
 
   const author = {
@@ -95,21 +95,21 @@ export async function getStaticProps({ params }: Params) {
   }
 }
 
-export async function getStaticPaths() {
-  const posts = await client().query([
-    Prismic.Predicates.at('document.type', 'post')
-  ])
+// export async function getStaticPaths() {
+//   const posts = await client().query([
+//     Prismic.Predicates.at('document.type', 'post')
+//   ])
 
-  const paths = posts.results.map((post) => {
-    return {
-      params: {
-        slug: post.uid,
-      },
-    }
-  });
+//   const paths = posts.results.map((post) => {
+//     return {
+//       params: {
+//         slug: post.uid,
+//       },
+//     }
+//   });
 
-  return {
-    paths,
-    fallback: true,
-  }
-}
+//   return {
+//     paths,
+//     fallback: false,
+//   }
+// }
