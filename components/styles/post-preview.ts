@@ -15,6 +15,8 @@ export const PostPreviewContainer = styled.section`
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 800;
+    word-break: break-all;
+    word-wrap: break-word;
 
     a {
       font-family: 'Montserrat', sans-serif;
