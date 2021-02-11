@@ -2,6 +2,14 @@ import styled from 'styled-components';
 
 export const PostHeaderContainer = styled.header`
 margin: 32px;
+word-break: break-word;
+h1 {
+  width: 100%;
+  font-size: 52px;
+  text-align: center;
+  height: auto;
+}
+
 
 @media only screen and (max-width: 768px) {
     h1 {
@@ -20,6 +28,7 @@ export const ImageContainer = styled.div`
   overflow: hidden;
   position: relative;
   margin-bottom: 24px;
+  word-break: break-word;
 
   img {
     width: 100%;
@@ -56,6 +65,7 @@ export const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  word-break: break-word;
 
   h3 {
     font-family: 'Montserrat', sans-serif;

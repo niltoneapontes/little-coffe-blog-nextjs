@@ -3,8 +3,24 @@ import Post from '../../types/post'
 
 import { MoreStoriesContainer } from '../styles/more-stories'
 
+type MorePost = {
+  post: { 
+    uid: string;
+    data: {
+      title: string;
+      excerpt: string;
+      coverimage: string;
+      date: string;
+      body: string;
+  }},
+  author: {
+    name: string;
+    picture: string;
+  }
+}
+
 type Props = {
-  posts: Post[]
+  posts: MorePost[];
 }
 
 const MoreStories = ({ posts }: Props) => {
@@ -13,13 +29,13 @@ const MoreStories = ({ posts }: Props) => {
       <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-8 lg:col-gap-16 row-gap-10 md:row-gap-16 mb-32">
         {posts.map((post) => (
           <PostPreview
-            key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
+            key={post.post.uid}
+            title={post.post.data.title}
+            coverImage={post.post.data.coverimage}
+            date={post.post.data.date}
             author={post.author}
-            slug={post.slug}
-            excerpt={post.excerpt}
+            slug={post.post.uid}
+            excerpt={post.post.data.excerpt}
           />
         ))}
       </div>
