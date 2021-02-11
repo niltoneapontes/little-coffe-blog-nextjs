@@ -4,11 +4,9 @@ import HeroPost from '../components/component/hero-post'
 import Intro from '../components/component/intro'
 import Layout from '../components/component/layout'
 import { MainContainer } from '../components/styles/main-container'
-import { getAllPosts } from '../lib/api'
 import Prismic from 'prismic-javascript';
 import { RichText } from 'prismic-dom';
 import Head from 'next/head'
-import Post from '../types/post'
 
 import SimpleForm from '../components/component/chatbot'
 import { client } from '@/prismic-configuration'
@@ -84,7 +82,6 @@ export async function getServerSideProps() {
   ])
 
   const posts = getPosts.results;
-
   return {
     props: {
       posts
