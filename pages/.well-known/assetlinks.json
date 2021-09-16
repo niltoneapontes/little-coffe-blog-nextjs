@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "br.com.digipronto.ChinaInBox",
+    "sha256_cert_fingerprints": ["34:FE:70:22:B5:75:FD:D4:FA:05:1A:1B:E4:8A:46:4A:AA:DB:D5:25:BA:46:C3:FC:E9:2E:61:BC:7D:8C:9B:4C"]
+  }
+}]
