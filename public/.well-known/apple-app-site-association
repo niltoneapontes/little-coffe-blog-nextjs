@@ -1,7 +1,8 @@
 {
   "applinks": {
+    "apps": [],
     "details": [{
-      "appIDs": ["8JUC3ASGSX.br.com.digipronto.ChinaInBox"],
+      "appIDs": ["500179321.br.com.digipronto.ChinaInBox"],
       "paths": ["*"]
     }]
   }
